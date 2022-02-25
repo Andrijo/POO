@@ -1,11 +1,11 @@
-package Practicas;
+package EVA1_1_HOLAMUNDO;
 
 /**
  * PALABRAS EN AZUL: palabras reservadas: uso exclusivo del lenguaje PALABRAS EN
  * NEGRO: IDENTIFICADORES --> variables, constantes, clases, funciones, objetos,
  * etc []: arreglo {}: delimitadores --> bloques de código
  *
- * @author Andy Espino Cabrales
+ * @author Andy
  */
 public class EVA1_1_HOLAMUNDO { //Cuerpo de la clase
 

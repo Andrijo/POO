@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Practicas;
+package EVA1_5_COMPUTADORA;
 
 /**
  *
  * @author User
  */
-public class EVA1_2_CLASE_PERSONA {
+public class EVA1_5_COMPUTADORA {
     
 }
