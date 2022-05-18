@@ -11,6 +11,14 @@ package EVA2_1_HERENCIA;
  */
 public class EVA2_1_HERENCIA {
 
+    public static void main(String[] args) {
+        Estudiante student = new Estudiante();
+        student.setNombre("Andy");
+        student.setEdad(19);
+        student.setNumeroControl("LC205546HC");
+        student.imprimirDatos();
+        System.out.println("Número de control: " + student.getNumeroControl());
+    }
 }
 
 class Persona {
@@ -46,8 +54,23 @@ class Persona {
         this.nombre = nombre;
     }
 
+    public void imprimirDatos() {
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Edad: " + getEdad());
+    }
+
 }
 
 class Estudiante extends Persona {
-    
+
+    //ATRIBUTOS
+    private String numeroControl;
+
+    public String getNumeroControl() {
+        return numeroControl;
+    }
+
+    public void setNumeroControl(String numeroControl) {
+        this.numeroControl = numeroControl;
+    }
 }
