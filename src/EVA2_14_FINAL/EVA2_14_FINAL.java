@@ -7,7 +7,7 @@ package EVA2_14_FINAL;
 
 /**
  *
- * @author User
+ * @author Andrijo
  */
 public class EVA2_14_FINAL {
 
@@ -17,6 +17,64 @@ public class EVA2_14_FINAL {
 
 }
 
-class estudiantePosgrado {
+/*class estudiantePosgrado {
+
+}*/
+final class estudiante extends Persona {
+
+    //Atributos
+    private String numeroControl;
+
+    public estudiante() {
+    }
+
+    public estudiante(String numeroControl) {
+        this.numeroControl = numeroControl;
+    }
+
+    public estudiante(String numeroControl, String nombre, int edad) {
+        super(nombre, edad);
+        this.numeroControl = numeroControl;
+    }
+
+    public String getNumeroControl() {
+        return numeroControl;
+    }
+
+    public void setNumeroControl(String numeroControl) {
+        this.numeroControl = numeroControl;
+    }
+
+}
+
+class Persona {
+
+    //ATRIBUTOS
+    private String nombre;
+    private int edad;
+
+    public Persona() {
+    }
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
 }
