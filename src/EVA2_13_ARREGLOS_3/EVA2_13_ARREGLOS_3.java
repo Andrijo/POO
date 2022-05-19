@@ -18,12 +18,12 @@ public class EVA2_13_ARREGLOS_3 {
         Persona[] arrayPeople = new Persona[10];
         for (int i = 0; i < 10; i++) {
             //Crear el objeto
-            arrayPeople[i] =  new Persona();
-            System.out.println("¿Cuál es tu nombre?: ");
+            arrayPeople[i] = new Persona();
+            System.out.print((i + 1) + ". ¿Cuál es tu nombre?: ");
             arrayPeople[i].setNombre(momento.nextLine());
         }
         for (int i = 0; i < 10; i++) {
-            System.out.println("Nombre: " + arrayPeople[i].getNombre());
+            System.out.println((i + 1) + ". Nombre: " + arrayPeople[i].getNombre());
         }
     }
 }
