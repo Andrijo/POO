@@ -6,6 +6,8 @@
 package EVA3_18_ARCHIVOS;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  *
@@ -13,17 +15,29 @@ import java.io.FileInputStream;
  */
 public class EVA3_18_ARCHIVOS {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
+        //TODO code application logic here
+        //Ruta:
+        //FileInputStream
         try {
-            FileInputStream momento = new FileInputStream("C:/Archivo/Momento.txt");
+            FileInputStream momento = new FileInputStream("C:/Archivos/momento.txt");
+            /*do {
+             System.out.println("Momento: " + momento.read());
+             } while (momento.read() != -1);
+             */
             int caracter = momento.read();
             while (caracter != -1) {
-                System.out.print((char) momento.read());
+                System.out.print((char) caracter);
                 caracter = momento.read();
             }
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
-
     }
+
 }
