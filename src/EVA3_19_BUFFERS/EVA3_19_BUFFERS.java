@@ -35,6 +35,7 @@ public class EVA3_19_BUFFERS {
                 System.out.println(line);
                 line = readText.readLine();
             }
+            readText.close(); // Cerrar el stream
         } catch (IOException ex) {
             Logger.getLogger(EVA3_19_BUFFERS.class.getName()).log(Level.SEVERE, null, ex);
         }
